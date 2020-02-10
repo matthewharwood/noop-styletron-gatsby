@@ -4,6 +4,21 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { styled, useStyletron } from "styletron-react"
+
+const RedAnchor = styled("a", { color: "red" })
+const BigAnchor = styled("a", ({ $size }) => ({ fontSize: `${$size}px` }))
+
+const Example = () => {
+  const [css] = useStyletron()
+  return (
+    <div>
+      <RedAnchor>Red Anchor</RedAnchor>
+      <BigAnchor $size={64}>Big Anchor</BigAnchor>
+      <p className={css({ color: "blue" })}>blue text</p>
+    </div>
+  )
+}
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +29,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <Example />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
