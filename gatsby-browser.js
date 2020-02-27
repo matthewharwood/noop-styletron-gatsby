@@ -5,15 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-
-import React from 'react';
-import { BaseProvider } from 'baseui';
-
-
-export const wrapRootElement = ({ element }) => {
-  return (
-    <BaseProvider id="baseui">
-      {element}
-    </BaseProvider>
-  );
-};

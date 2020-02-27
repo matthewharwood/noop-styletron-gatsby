@@ -2087,10 +2087,10 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-baseui@^9.52.0:
-  version "9.52.0"
-  resolved "https://unpm.uberinternal.com/baseui/-/baseui-9.52.0.tgz#98292b9cf3bd0125851a07a4a5299fd830d620fb"
-  integrity sha1-mCkrnPO9ASWFGgekpSmf2DDWIPs=
+baseui@^9.58.0:
+  version "9.58.0"
+  resolved "https://unpm.uberinternal.com/baseui/-/baseui-9.58.0.tgz#4e376c815953202f00e957a09d7ba72eba0f52de"
+  integrity sha1-TjdsgVlTIC8A6VegnXunLroPUt4=
   dependencies:
     card-validator "^6.2.0"
     date-fns "^2.6.0"
