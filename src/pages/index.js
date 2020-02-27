@@ -6,6 +6,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import { styled, useStyletron } from "styletron-react"
 
+import { Button } from "baseui/button"
+
 const RedAnchor = styled("a", { color: "red" })
 const BigAnchor = styled("a", ({ $size }) => ({ fontSize: `${$size}px` }))
 
@@ -13,6 +15,7 @@ const Example = () => {
   const [css] = useStyletron()
   return (
     <div>
+      <Button>Base Web Button</Button>
       <RedAnchor>Red Anchor</RedAnchor>
       <BigAnchor $size={64}>Big Anchor</BigAnchor>
       <p className={css({ color: "blue" })}>blue text</p>
